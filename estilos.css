@@ -2,22 +2,46 @@
     --color1: beige;
 }
 
-body{
-    background-color: var(--color1) !important;
+
+.contenedor-naza {
+    background-color: var(--color1);
+}
+
+img
+{   
+    width: 15em;
+    min-width: 200px;
+    max-width: 600px ;    
+    /* estos son filtros de brillo, contraste y escala de grises */
+    filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(120%) sepia(0%);
+    mix-blend-mode: multiply;
+    background: #ffff00;
+}
+
+img::after{
+    opacity: 1;
+}
+
+.nombreApellido{
+    font-family:roboto bold bold italic;
+    text-align: center;
+    margin-top:20px;
 }
 
 
-.card
-{
-    box-sizing: border-box;
-    margin-top:15em;
+.card-naza {
     display: flex;
-    width: 75rem;
-    height: 45em;
-    background-color: white !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* width: 60%;
+    height: 60%; */
 }
 
 p
 {
-    font-size: 1em;
+    font-size: 1.2rem;
+    max-width: 25em;
+    font-family: monospace;
 }
