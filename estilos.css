@@ -1,0 +1,23 @@
+:root {
+    --color1: beige;
+}
+
+body{
+    background-color: var(--color1) !important;
+}
+
+
+.card
+{
+    box-sizing: border-box;
+    margin-top:15em;
+    display: flex;
+    width: 75rem;
+    height: 45em;
+    background-color: white !important;
+}
+
+p
+{
+    font-size: 1em;
+}
