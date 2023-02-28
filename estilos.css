@@ -68,3 +68,19 @@ li {
   list-style: none;
   
 }
+
+.mi {
+   
+  filter: brightness(90%) 
+          contrast(170%)
+          grayscale(80%)
+          hue-rotate(10deg) 
+          invert(8%)
+          opacity(60%)
+          saturate(120%)
+          sepia(0%);
+ 
+  
+    
+  
+}
