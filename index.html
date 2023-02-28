@@ -20,13 +20,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    
-
-    
-    <div class="container ">
+    <div class="container">
       <!-- HEADER -->
       <header class="row">
         <div class="col-12">
@@ -41,23 +41,25 @@
         <section class="card-naza col-7 d-flex justify-content-center">
           <!-- seccion 1 about me -->
 
+          <div class="col-10 mi">
+            <button
+              type="button"
+              class="btn btn-success mov animate__bounceIn"
+              id="boton"
+            >
+              <h3>SOBRE MI</h3>
+            </button>
+            <p id="sobremi" class="fade-in-fade-out"></p>
 
-          <div class="col-10 mi" >
-            
-            
-        <button type="button"class="btn btn-success mov animate__bounceIn" id="boton"> <h3 >SOBRE MI</h3> </button>
-             <p  id="sobremi" class="fade-in-fade-out"> 
-               </p>
+            <script src="function.js"></script>
 
-        <script src="function.js"></script>
-            
             <hr />
             <hr />
           </div>
           <!-- seccion 2 experiencias -->
           <div>
             <h2>EXPERIENCIA</h2>
-            
+
             <div>
               <p>actualidad</p>
               <h4>KOMO INDEC DIGITALIZACION - DATA ENTRY</h4>
@@ -88,6 +90,7 @@
             <div>
               <h4>DISEÑADOR MULTIMEDIA</h4>
               <ul>
+                <p>actualidad</p>
                 <li>
                   <p>Desarrollador de contendio Audioviusual para redes</p>
                 </li>
@@ -152,9 +155,10 @@
               </li>
             </ul>
           </div>
+
         </section>
         <!-- Foto de Perfil - Contactos - idiomas ... -->
-        <section class="col-4 contenedor-contacto sticky-top ">
+        <section class="col-4 contenedor-contacto sticky-top">
           <div class="sticky-top">
             <div class="col-4">
               <picture class="seccion__foto">
@@ -164,22 +168,26 @@
             <div>
               <p class="datosDeContacto">Contactos</p>
               
-              <li><i class="bi bi-envelope-at-fill"></i> luis.escalada@hotmail.com</li>
-              <li><i class="bi bi-telephone-forward-fill"></i>  054 15 53224671</li>
+              <li><i class="bi bi-envelope-at-fill">
+                </i>  luis.escalada@hotmail.com
+              </li>
+              <li>
+                <i class="bi bi-telephone-forward-fill"></i>  054 1553224671
+              </li>
               <li><i class="bi bi-github"></i> LuisMistic</li>
 
-               
               <!-- boton de enviar whatsapp -->
               <a
                 href="https://api.whatsapp.com/send/?phone=541153224671"
-                target="_blank"
-              >
+                target="_blank">
                 <button class="btn btn-success">
                   <span class="bi bi-whatsapp"></span> Enviame un WhatsApp
                 </button>
               </a>
             </div>
-            <hr />
+
+            <hr/>
+
             <div>
               <p class="datosDeContacto">Idiomas</p>
               <li>Español</li>
@@ -201,6 +209,7 @@
         </section>
       </main>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
