@@ -15,7 +15,7 @@ img {
     invert(0%) opacity(70%) saturate(120%) sepia(0%);
   mix-blend-mode: multiply;
   background: #134d52;
-  box-shadow: 0 0 15px #ddd;
+  box-shadow: 0 0 15px 3px #9b9b9b;
 }
 
 img::after {
@@ -60,6 +60,12 @@ p {
 
 .subtitulo {
   background-color: green;
+}
+.c{
+
+  background-color: var(--color1) !important;
+  box-shadow: 0 0 15px 3px #9b9b9b;
+  filter
 }
 
 ul {
