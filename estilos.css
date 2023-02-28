@@ -7,12 +7,12 @@ body {
 }
 
 img {
-  width: 15em;
+  width: 8em;
   min-width: 200px;
   max-width: 600px;
   /* estos son filtros de brillo, contraste y escala de grises */
   filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(0deg)
-    invert(0%) opacity(100%) saturate(120%) sepia(0%);
+    invert(0%) opacity(70%) saturate(120%) sepia(0%);
   mix-blend-mode: multiply;
   background: #134d52;
   box-shadow: 0 0 15px #ddd;
@@ -71,16 +71,7 @@ li {
 
 .mi {
    
-  filter: brightness(90%) 
-          contrast(170%)
-          grayscale(80%)
-          hue-rotate(10deg) 
-          invert(8%)
-          opacity(60%)
-          saturate(120%)
-          sepia(0%);
- 
-  
-    
+  filter: brightness(90%)  contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(60%) saturate(120%) sepia(0%);
+   
   
 }
