@@ -1,5 +1,5 @@
 :root {
-  --color1: beige;
+  --color1: rgb(232, 233, 233);
 }
 
 body {
@@ -14,7 +14,7 @@ img {
   filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(0deg)
     invert(0%) opacity(100%) saturate(120%) sepia(0%);
   mix-blend-mode: multiply;
-  background: #ffff00;
+  background: #134d52;
   box-shadow: 0 0 15px #ddd;
 }
 
@@ -23,13 +23,14 @@ img::after {
 }
 
 .nombreApellido {
-  font-family: roboto bold bold italic;
+  font-family: roboto bold;
   text-align: center;
-  margin-top: 20px;
+  margin: 15px;
 }
 
 .card-naza {
-  background-color: #f2f2f2;
+  background-color: #9b9b9b;
+  box-shadow: 0 0 15px 3px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -42,6 +43,26 @@ h2 {
   border-bottom: solid 1.5px orange;
 }
 
+.datosDeContacto {
+  font-family: roboto bold;
+  font-size: 35px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  font-family: roboto bold;
+}
+
 .subtitulo {
   background-color: green;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
 }
