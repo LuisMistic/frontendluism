@@ -6,10 +6,6 @@ body {
   background-color: var(--color1) !important;
 }
 
-container {
-  margin: auto;
-}
-
 img {
   width: 15em;
   min-width: 200px;
@@ -26,7 +22,7 @@ img::after {
   opacity: 1;
 }
 
-.nombreApellido {
+.mov {
   font-family: roboto bold;
   margin: 15px;
 }
@@ -45,8 +41,6 @@ h2 {
   font-family: roboto bold;
   border-bottom: solid 1.5px orange;
 }
-
-
 
 .datosDeContacto {
   font-family: roboto bold;
@@ -72,4 +66,5 @@ ul {
 
 li {
   list-style: none;
+  
 }
