@@ -6,8 +6,8 @@ body {
   background-color: var(--color1) !important;
 }
 
-container{
-  margin:auto;
+container {
+  margin: auto;
 }
 
 img {
@@ -21,8 +21,6 @@ img {
   background: #134d52;
   box-shadow: 0 0 15px #ddd;
 }
-
-
 
 img::after {
   opacity: 1;
@@ -48,10 +46,7 @@ h2 {
   border-bottom: solid 1.5px orange;
 }
 
-h4 {
-  font-family: roboto bold;
-  border-bottom: solid 1.5px rgb(122, 114, 100);
-}
+
 
 .datosDeContacto {
   font-family: roboto bold;
