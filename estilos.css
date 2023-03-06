@@ -2,8 +2,22 @@
   --color1: rgb(232, 233, 233);
 }
 
+
+
 body {
   background-color: var(--color1) !important;
+
+}
+
+ul.navegar li {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+#sobremi{
+  background-color: rgb(87, 178, 87);
+ filter: brightness(10%) contrast(170%) grayscale(80%) hue-rotate(5deg)
+    invert(0%) opacity(70%) saturate(10%) sepia(0%);filter  : opacity(80%);
 
 }
 
@@ -36,8 +50,6 @@ img::after {
   contrast(170%); 
   margin-left: 0px;
   font-size:  20px;
-
-  
  
 }
 
@@ -84,8 +96,7 @@ p {
 
   background-color: var(--color1) !important;
   text-align: center;
-  filter:opacity(95%);
-  
+  filter:opacity(95%); 
 }
 
 
