@@ -62,7 +62,7 @@ img::after {
 }
 
 .card-naza {
-  background-color: #9b9b9b;
+  background-color: #f2eaea;
   box-shadow: 0 0 15px 3px #13523c;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ img::after {
 h2 {
   font-family: roboto bold;
   border-bottom: solid 6.5px rgb(176, 167, 153);
-  filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(80%) saturate(120%) sepia(6%);
+  filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(90%) saturate(120%) sepia(6%);
 }
 
 .datosDeContacto {
@@ -123,7 +123,7 @@ li {
 }
 
 .actualidad {
-  filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(30%) saturate(120%) sepia(6%);
+  filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(80%) saturate(120%) sepia(6%);
 
 }
 
@@ -156,7 +156,7 @@ li {
 
 .habilidad {
   background: #106648;
-  filter: opacity(80%);
+  filter: opacity(90%);
   margin-top: 30px;
   margin-bottom: 20px;
   padding-left: 0 !important;
@@ -166,7 +166,7 @@ li {
 
 .edu {
   background: #106648;
-  filter: opacity(80%);
+  filter: opacity(90%);
   margin-top: 30px;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -176,9 +176,16 @@ li {
 
 .exp {
   background: #106648;
-  filter: opacity(80%);
+  filter: opacity(90%);
   margin-top: 30px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   width: 100% !important;
+  
+
+}
+
+.color {
+
+   color: white;
 }
