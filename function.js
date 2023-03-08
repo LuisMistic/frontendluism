@@ -7,8 +7,5 @@ document.getElementById('boton').onclick = function() {
 }
 
 
-document.getElementById('boton_color').addEventListener('click', function () {
 
-    document.body.style.backgroundColor = '#719C46';
-    
-});
+

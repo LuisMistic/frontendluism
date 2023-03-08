@@ -1,12 +1,13 @@
 :root {
   --color1: rgb(232, 233, 233);
-  background-color: rgb(232, 233, 233) ;
+  
 }
 
 
 
 body {
   background-color: var(--color1) !important;
+  animation: fade-inout 9s;
 
 }
 
@@ -19,6 +20,7 @@ ul.navegar li {
   padding-top: 1.5em;
   filter: brightness(10%) contrast(170%) grayscale(80%) hue-rotate(5deg) invert(0%) opacity(70%) saturate(10%) sepia(0%);
   filter: opacity(80%);
+  animation: fade-inout 4s;
 
 }
 
@@ -46,7 +48,7 @@ img::after {
 
 .mov1 {
 
-  margin: 30px;
+  margin: 50px;
   filter: opacity(20%) contrast(170%);
   margin-left: 0px;
   font-size: 20px;
@@ -63,7 +65,7 @@ img::after {
 
 .card-naza {
   background-color: #f2eaea;
-  box-shadow: 0 0 15px 3px #13523c;
+  box-shadow: 0 0 15px 3px #161d1a;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -187,5 +189,11 @@ li {
 
 .color {
 
-   color: white;
+   color: white
+}
+
+#boton_color{
+   margin-top: 0px !important;
+   font-size: 15px;
+
 }

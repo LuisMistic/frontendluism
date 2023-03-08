@@ -4,5 +4,5 @@ function enviarWhatsApp() {
 }
 
 function jugando (){
-    alert("Grande luis primeroo ")
+    alert("Alerta  ")
 }
