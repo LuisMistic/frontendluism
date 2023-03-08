@@ -57,12 +57,17 @@ img::after {
 
 }
 
+/* botones de navegacion */
+#boton{
+  font-size: 15px;
+}
+
 .btn {
   
   filter: opacity(60%);
   margin-top: 0em;
-  font-size: 200px;
-
+  
+  
 
 }
 
@@ -127,10 +132,7 @@ li {
   font-size: 13px;
 }
 
-.actualidad {
-  filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(80%) saturate(120%) sepia(6%);
 
-}
 
 .limite {
   font-family: roboto bold;
