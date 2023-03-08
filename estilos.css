@@ -3,10 +3,12 @@
   
 }
 
-
+.container{
+  background-color: rgb(232, 233, 233);
+}
 
 body {
-  background-color: var(--color1) !important;
+  background-color:  rgb(232, 233, 233) ;
   animation: fade-inout 9s;
 
 }
@@ -56,6 +58,7 @@ img::after {
 }
 
 .btn {
+  
   filter: opacity(60%);
   margin-top: 0em;
   font-size: 200px;
@@ -101,13 +104,13 @@ p {
 /*barra navegacion*/
 .c {
 
-  background-color: var(--color1) !important;
+  background-color:  rgb(232, 233, 233) !important;
   text-align: center;
   filter: opacity(95%);
 }
 
 .b {
- background-color: var(--color1) !important;
+ background-color:  rgb(232, 233, 233) !important;
   text-align: left;
   filter: opacity(95%);
   margin: 20xp;
@@ -192,8 +195,9 @@ li {
    color: white
 }
 
-#boton_color{
+.boton_color{
    margin-top: 0px !important;
    font-size: 15px;
-
+   
 }
+
