@@ -3,10 +3,13 @@
   
 }
 
+
+
+
 .boton_color{
    margin-top: 10px !important;
    font-size: 15px;
-   margin-left: 15em;
+  
    
 }
 
@@ -17,7 +20,8 @@
 
 body {
   background-color:  rgb(232, 233, 233) ;
-  animation: fade-inout 9s;
+  animation: fade-inout 2s;
+     filter:  opacity(70%) ;
 
 }
 
@@ -29,7 +33,7 @@ ul.navegar li {
 #sobremi {
   padding-top: 1.5em;
   filter: brightness(10%) contrast(170%) grayscale(80%) hue-rotate(5deg) invert(0%) opacity(70%) saturate(10%) sepia(0%);
-  filter: opacity(80%);
+  
   animation: fade-inout 4s;
 
 }
@@ -64,6 +68,41 @@ img::after {
   font-size: 20px;
 
 }
+/* botones estilos */
+#boton_color0{
+  
+  background-color: #ffffff;
+  font-size: 8px;
+  filter: opacity(60%);
+}
+#boton_color{
+  
+  background-color: #719C46;
+  font-size: 8px;
+  filter: opacity(60%);
+}
+
+#boton_color1{
+  
+  background-color: #000000;
+  font-size: 8px;
+  filter: opacity(60%);
+}
+#boton_color2{
+  
+  background-color: #FF8C00;
+  font-size: 8px;
+  filter: opacity(60%);
+}
+#boton_color3{
+  
+  background-color: #2F4F4F;
+  font-size: 8px;
+  filter: opacity(60%);
+}
+
+
+
 
 /* botones de navegacion */
 #boton{
@@ -108,6 +147,7 @@ p {
   font-size: 20px;
   font-family: roboto bold;
   margin: 0 !important;
+  
 }
 
 .subtitulo {
@@ -149,9 +189,7 @@ li {
 
 }
 
-.mi {
-  filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(10deg) invert(8%) opacity(80%) saturate(120%) sepia(6%);
-}
+
 
 @keyframes fade-inout {
   0% {
@@ -163,9 +201,7 @@ li {
   }
 }
 
-.fade-in-fade-out {
-  animation: fade-inout 5s;
-}
+
 
 /*secciones */
 
@@ -202,7 +238,7 @@ li {
 
 .color {
 
-   color: white
+   color: rgb(255, 255, 255);
 }
 
 
