@@ -21,7 +21,7 @@
 body {
   background-color:  rgb(232, 233, 233) ;
   animation: fade-inout 2s;
-     filter:  opacity(70%) ;
+     filter:  opacity(75%) ;
 
 }
 
@@ -34,7 +34,7 @@ ul.navegar li {
   padding-top: 1.5em;
   filter: brightness(10%) contrast(170%) grayscale(80%) hue-rotate(5deg) invert(0%) opacity(70%) saturate(10%) sepia(0%);
   
-  animation: fade-inout 4s;
+  animation: fade-inout 9s;
 
 }
 
@@ -111,10 +111,18 @@ img::after {
 
 .btn {
   
-  filter: opacity(50%);
   margin-top: 0em;
   
   
+
+}
+
+.v-line{
+ border-left: thick solid #000;
+ height:100%;
+ left: 0%;
+ position: absolute;
+ filter: opacity(40%);
 
 }
 
@@ -126,7 +134,7 @@ img::after {
   align-items: flex-start;
   text-align: center;
   flex-wrap: wrap;
-  filter: opacity(60%);
+ 
 }
 
 h2 {
@@ -239,6 +247,7 @@ li {
 .color {
 
    color: rgb(255, 255, 255);
+   
 }
 
 
