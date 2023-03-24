@@ -34,7 +34,7 @@ ul.navegar li {
   padding-top: 1.5em;
   filter: brightness(10%) contrast(170%) grayscale(80%) hue-rotate(5deg) invert(0%) opacity(70%) saturate(10%) sepia(0%);
   
-  animation: fade-inout 9s;
+  
 
 }
 
