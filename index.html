@@ -7,111 +7,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="estilos.css" />
   <title>Luis Martinez CV</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+<link rel="stylesheet" href="estilos.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
 </head>
 
 
 <body>
  <div id="mi"></div>
-  
+   
     <!-- HEADER -->
   <header class="row sticky-top">
-  <div class="col-12">
-  <li>
-    <a class="button" type="submit" id="boton" href="#mi">SOBRE MI</a>
-  
-  
-  
-    <a class="button" type="submit" id="boton" href="#experiencia">EXPERIENCIA</a>
-  
-    <a class="button" type="submit" id="boton" href="#educación">EDUCACION</a>
-  
-  
-    <a class="button" type="submit" id="boton" href="#habilidades">HABILIDADES</a>
- 
-  <a class="button" type="submit" id="boton" href="#contacto">CONTACTO</a>
-  </li>
-  </div>
+      <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="video/bar.mp4">
+      </video>
+    <div class="col-12">
+      <li>
+
+
+        <a class="button" type="submit" id="boton" href="#mi">SOBRE MI</a>
+        <a class="button" type="submit" id="boton" href="#experiencia">EXPERIENCIA</a>
+        <a class="button" type="submit" id="boton" href="#educación">EDUCACION</a>
+        <a class="button" type="submit" id="boton" href="#habilidades">HABILIDADES</a>
+     </li>
+   </div>
   </header>
       
-   
     
-      
-
-    
-    <body>
-    <!-- MAIN -->
-     <main class="mian">
-      <section class="d-flex justify-content-center">
+ <main class="mian">
+  <section class="d-flex justify-content-center">
         <!-- seccion 1 about me -->
-        <div class="row " id="uno">
-        <div class="col-6" >
-          <h1 class="tex">
-            LUIS SEBASTIAN <strong>MARTINEZ MORINIGO</strong>
-          </h1>
-          <p id="sobremi" class="fade-in-fade-out"></p>
-          
-            <p>Software</p>
-            <li>Vs code</li>
-            <li>Apache NetBean</li>
-            <li>Paquete de Adobe Cloud</li>
-            <li>Cinema 4d</li>
-            <li></li>
-            <a download href="./curr/CURRI LUIS.pdf"><button class="btn btn-success">Descarga mi CV</button></a>
-          
-          
-        </div>
+    <div class="row " id="uno" data-aos="fade-right" data-aos-easing="ease-in-sine">
+          <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+            <source src="/video/video.mp4">
+          </video>
+         <div class="col-sm-6" >
+        
+             <h1 class="nombre">
+                LUIS SEBASTIAN MARTINEZ MORINIGO
+             </h1>
+             <p id="sobremi"></p>
 
-          <div class="col-6">
+           <div id="font">
+             <ul>
+              <li>
+                <p>SOFTWARE</p>
+               </li>
+               <li>Vs code</li>
+               <li>Apache NetBean</li>
+               <li>Paquete de Adobe Cloud</li>
+               <li>Cinema 4d</li>  
+             </ul>
+             <ul>        
+            
+               <a download href="./curr/CURRI LUIS.pdf"><button class="btn btn-success" >Descarga mi CV</button></a>
           
+              </ul>
+           </div>
+          
+          </div>
+          
+          <div class="col-sm-5 ">
+        
           <div>
+            <img src="imagenes/luis.jpg" class="img-thumbnail" class="class="img-fluid" alt="imagen de perfil"   />
+          </div>
+        
           
-          
-            <img src="imagenes/luis.jpg" class="img-thumbnail" class="class="img-fluid" alt="imagen de perfil" />
+        
+        </div>
+        <div class="col-sm-1">
+             <ul>
+              <li>
+                <a href="https://www.facebook.com/libertariasur" target="_blank" class="button">
+                  <i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/luismseba/" target="_blank" class="button">
+                  <i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/luis-sebastian-morinigo-61b12622a/" target="_blank" class="button">
+                <i class="fa-brands fa-linkedin-in"></i></a>
+              
+              </li>
+              
+              <li>
+              <a href="https://api.whatsapp.com/send/?phone=541153224671" target="_blank" class="button">
+                <i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li>
+                  <a href="mailto:luis.escalada@hotmail.com" target="_blank" class="button" >
+                    <i class="fa-sharp fa-solid fa-envelope"></i></a>
+                </li>
+                
+             </ul>
+        </div>
+        
+       
+        
+    </div>
+    
+  </section>   
+        
+
+
+
+ <section class="d-flex justify-content-center">
+         
+      <div id="experiencia"></div>
+      <div class="row" id="dos" data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine">
+      <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="/video/humo.mp4">
+      </video>
+         <div>
+             <h2 class="nombre">EXPERIENCIA</h2>
+          </div>
+          <div>
+             <ul>
+              <li>
+               <h4>KOMO INDEC DIGITALIZACION - DATA ENTRY</h4>
+              </li>
+              <li>
+                <p>Ingreso de datos</p>
+              </li>
+              <li>
+               <p>Digitalizacion</p>
+              </li>
+              <li>
+               <p>Seguimiento y solucion de problemas digitales</p>
+            </li>
+            </ul>
          
           </div>
-        <div class="col-6"> 
-          
-        </div> 
-        </div>
-        </div>
-        
-        
-</section>
-      
-           
-        </div>
-<div id="experiencia"></div>
-        <section class="d-flex justify-content-center">
-          <div class="row" id="dos">
-        <!-- seccion 2 experiencias -->
-        
+
+
         <div>
-          <h2 class="color">EXPERIENCIA</h2>
-        </div>
-        <div>
-          <p class="actualidad">actualidad</p>
-          <h4 class="titulo">KOMO INDEC DIGITALIZACION - DATA ENTRY</h4>
-        
-          <li>
-            <p>Ingreso de datos</p>
-          </li>
-          <li>
-            <p>Digitalizacion</p>
-          </li>
-          <li>
-            <p>Seguimiento y solucion de problemas digitales</p>
-        
-          </li>
-          <div class="limite"></div>
-        </div>
-        <div>
-          <p class="actualidad">actualidad</p>
-          <h4>COMPANIA TEATRAL MI LUGAR EN EL MUNDO</h4>
+             <h4>COMPANIA TEATRAL MI LUGAR EN EL MUNDO</h4>
         
           <li>
             <p>Fotografia - Filmacion - edicion</p>
@@ -120,7 +157,7 @@
         </div>
         
         <div>
-          <p class="actualidad">actualidad</p>
+          
           <h4>DISEÑADOR MULTIMEDIA</h4>
         
           <li>
@@ -147,6 +184,9 @@
  <section>
   <div id="educación"></div>
   <div class="row" id="tres">
+        <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+          <source src="/video/educacion.mp4">
+        </video>
 <div>
   <h2 class="color">EDUCACION</h2>
 </div>
@@ -168,6 +208,9 @@
 <section>
   <div id="habilidades"></div>
   <div class="row" id="cuatro">
+    <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+      <source src="/video/habi.mp4">
+    </video>
     <h2 class="color">HABILIDADES</h2>
   
   <ul>
@@ -194,43 +237,22 @@
   <div class="row" id="cinco">
 
 
-    <p class="datosDeContacto">Contactos</p>
-
-    <li><i class="bi bi-envelope-at-fill">
-      </i> luis.escalada@hotmail.com
-    </li>
-    <li>
-      <i class="bi bi-telephone-forward-fill"></i> 054 1553224671
-    </li>
-    <li><i class="bi bi-github"></i> LuisMistic</li>
-
-    <!-- boton de enviar whatsapp -->
-    <a href="https://api.whatsapp.com/send/?phone=541153224671" target="_blank">
-      <button class="btn btn-success ">
-        <span class="bi bi-whatsapp "></span> Enviar WhatsApp
-      </button>
-    </a>
-  </div>
-
-  <hr />
-
-  <div>
-    <p class="datosDeContacto">Idiomas</p>
-    <li>Español</li>
-    <li>Inglés</li>
-  </div>
-  <hr />
+    <h1 class="nombre">
+      LUIS SEBASTIAN MARTINEZ MORINIGO
+    </h1>
   
 </section>
-     </main>
+ </main>
       <!--  Contactos - idiomas ... -->
       
   <script src="function.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="bower_components/aos/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/e3ddec3070.js" crossorigin="anonymous"></script>
   <script src="./variable.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
