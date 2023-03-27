@@ -25,6 +25,7 @@
       <source src="/video/bar.mp4">
     </video>
     <div class="col-12">
+      <ul class="d-none d-lg-block" >
       <li>
 
         <!-- -- LINKS -- -->
@@ -33,7 +34,19 @@
         <a class="button" type="submit" id="boton" href="#educación">EDUCACION</a>
         <a class="button" type="submit" id="boton" href="#habilidades">HABILIDADES</a>
       </li>
+      </ul>
+      <ul class="row sticky-button  d-lg-none d-flex justify-content-center">
+        <li>
+      
+          <!-- -- LINKS -- -->
+          <a class="button r" type="submit" id="boton" href="#mi"><i class="fa-solid fa-house-user" style="color: #ffffff;"></i></a>
+          <a class="button" type="submit" id="boton" href="#experiencia"><i class="fa-solid fa-person-digging" style="color: #ffffff;" ></i></a>
+          <a class="button" type="submit" id="boton" href="#educación"><i class="fa-sharp fa-solid fa-school" style="color: #ffffff;"></i></a>
+          <a class="button" type="submit" id="boton" href="#habilidades"><i class="fa-sharp fa-solid fa-scale-balanced" style="color: #ffffff;"></i></a>
+        </li>
+      </ul>
     </div>
+    
   </header>
 
 
@@ -42,13 +55,13 @@
     <!-- seccion 1 -->
     <section class="d-flex justify-content-center">
 
-      <div class="row " id="uno" data-aos="fade-right" data-aos-easing="ease-in-sine">
+      <div class="row " id="uno" data-aos="fade-right" data-aos-easing="ease-in">
         <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
           <source src="./video/video.mp4">
         </video>
-        <div class="col-sm-1 "  >
-          <div >
-            <ul >
+        <div class="col-sm-1 ">
+          <div>
+            <ul class="d-none d-lg-block">
               <li>
                 <button type="button" id="boton_color0" class="btn-outline-success animate__bounceIn"
                   style="border:none">___</button>
@@ -105,39 +118,64 @@
         </div>
 
         <div class="col-sm-1">
-          <ul>
+          <ul  class="d-none d-lg-block">
             <li>
-              <a href="https://www.facebook.com/libertariasur" target="_blank" class="button">
+              <a href="https://www.facebook.com/libertariasur" target="_blank" class="button class="list-group-item"">
                 <i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
               <a href="https://www.instagram.com/luismseba/" target="_blank" class="button">
-                <i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-instagram "></i></a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/luis-sebastian-morinigo-61b12622a/" target="_blank" class="button">
-                <i class="fa-brands fa-linkedin-in"></i></a>
+                <i class="fa-brands fa-linkedin-in "></i></a>
 
             </li>
 
             <li>
               <a href="https://api.whatsapp.com/send/?phone=541153224671" target="_blank" class="button">
-                <i class="fa-brands fa-whatsapp"></i></a>
+                <i class="fa-brands fa-whatsapp "></i></a>
             </li>
             <li>
               <a href="mailto:luis.escalada@hotmail.com" target="_blank" class="button">
-                <i class="fa-sharp fa-solid fa-envelope"></i></a>
+                <i class="fa-sharp fa-solid fa-envelope "></i></a>
             </li>
 
           </ul>
         </div>
+        <ul class="list-group list-group-horizontal justify-content-center d-lg-none"">
+              <li>
+                <a href=" https://www.facebook.com/libertariasur" target="_blank" class="button class=" list-group-item"">
+          <i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/luismseba/" target="_blank" class="button">
+              <i class="fa-brands fa-instagram "></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/luis-sebastian-morinigo-61b12622a/" target="_blank" class="button">
+              <i class="fa-brands fa-linkedin-in "></i></a>
+        
+          </li>
+        
+          <li>
+            <a href="https://api.whatsapp.com/send/?phone=541153224671" target="_blank" class="button">
+              <i class="fa-brands fa-whatsapp "></i></a>
+          </li>
+          <li>
+            <a href="mailto:luis.escalada@hotmail.com" target="_blank" class="button">
+              <i class="fa-sharp fa-solid fa-envelope "></i></a>
+          </li>
+        
+        </ul>
       </div>
     </section>
 
 
 
 
-    <section>
+    <section class="d-flex justify-content-center">
 
       <div id="experiencia">
         <!-- /* -- SECCIONES ROW css-- */ -->
@@ -206,7 +244,7 @@
 
 
 
-    <section>
+    <section  class="d-flex justify-content-center">
 
       <div id="educación">
         <!-- /* -- SECCIONES ROW css-- */ -->
@@ -271,30 +309,31 @@
 
 
 
-    <section>
+    <section  class="d-flex justify-content-center">
       <div id="habilidades"></div>
       <!-- /* -- SECCIONES ROW css-- */ -->
       <div class="row" id="cuatro">
         <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
           <source src="./video/habi.mp4">
         </video>
-        <h2 class="nombre">HABILIDADES</h2>
+       
 
         <ul>
+          <h2 class="nombre">HABILIDADES</h2>
           <li>
-            <p class="fontMerri m">Una buena comunicación verbal</p>
+            <p class="fontMerri m h">Una buena comunicación verbal</p>
           </li>
           <li>
-            <p class="fontMerri m">La facilidad para trabajar en equipo</p>
+            <p class="fontMerri m h">La facilidad para trabajar en equipo</p>
           </li>
           <li>
-            <p class="fontMerri m">La capacidad de liderazgo</p>
+            <p class="fontMerri m h">La capacidad de liderazgo</p>
           </li>
           <li>
-            <p class="fontMerri m">El poder ser multitarea</p>
+            <p class="fontMerri m h">El poder ser multitarea</p>
           </li>
           <li>
-            <p class="fontMerri m">Las habilidades informáticas</p>
+            <p class="fontMerri m h">Las habilidades informáticas</p>
           </li>
         </ul>
       </div>
@@ -309,6 +348,9 @@
           LUIS SEBASTIAN MARTINEZ MORINIGO
         </h1>
 
+    </section>
+    <section>
+     
     </section>
   </main>
   <!--  Contactos - idiomas ... -->

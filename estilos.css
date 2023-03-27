@@ -125,6 +125,7 @@ a {
   color: white !important ;
 }
 
+
 /* -- PROPIEDADES BUTTON -- */
 .button {
   border-color: hsl(90, 34%, 42%, 0%);
@@ -205,6 +206,11 @@ a {
    font-size: 37px;
 }
 
+.h{
+ color: black;
+
+
+}
 /*--font-- */
 
 .exp {
