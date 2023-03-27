@@ -9,7 +9,7 @@ document.getElementById('boton1').onclick = function() {
 document.getElementById('boton2').onclick = function () {
 
 
-    document.getElementById("sobremi").innerHTML = "Los programas con los que trabajo son los siguientes:  DISEÑO GRAFICO – EDICION DE VIDEO- EDICION DE SONIDO  (Paquete de  Adobe Cloud)  – ANIMACION 3D (Cinema 4d)  DESARROLLADOR WEB (Visual Studio Code – Apache NetBean)   ";
+    document.getElementById("sobremi").innerHTML = " DISEÑO GRAFICO – EDICION DE VIDEO- EDICION DE SONIDO  (Paquete de  Adobe Cloud)  – ANIMACION 3D (Cinema 4d)  DESARROLLADOR WEB (Visual Studio Code – Apache NetBean)   ";
 }
 
 
