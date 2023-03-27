@@ -11,7 +11,7 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 <link rel="stylesheet" href="estilos.css" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
 
 </head>
 
@@ -22,12 +22,12 @@
     <!-- HEADER -->
   <header class="row sticky-top">
       <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
-        <source src="video/bar.mp4">
+        <source src="/video/bar.mp4">
       </video>
     <div class="col-12">
       <li>
 
-
+        
         <a class="button" type="submit" id="boton" href="#mi">SOBRE MI</a>
         <a class="button" type="submit" id="boton" href="#experiencia">EXPERIENCIA</a>
         <a class="button" type="submit" id="boton" href="#educación">EDUCACION</a>
@@ -38,100 +38,124 @@
       
     
  <main class="mian">
+
+<!-- seccion 1 -->
   <section class="d-flex justify-content-center">
-        <!-- seccion 1 about me -->
+
     <div class="row " id="uno" data-aos="fade-right" data-aos-easing="ease-in-sine">
           <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
             <source src="/video/video.mp4">
           </video>
-         <div class="col-sm-6" >
+          <div class="col-sm-1">
+            <div>
+              <ul>
+                <li>
+              <button type="button" id="boton_color0" class="btn-outline-success animate__bounceIn" style="border:none">___</button>
+              </li>
+              <button type="button" id="boton_color" class="btn-outline-success animate__bounceIn" style="border:none">___</button>
+              <li>
+              <button type="button" id="boton_color1" class="btn-outline-success animate__bounceIn" style="border:none">___</button>
+              </li>
+              <button type="button" id="boton_color2" class="btn-outline-success animate__bounceIn" style="border:none">___</button>
+              <li>
+              <button type="button" id="boton_color3" class="btn-outline-success animate__bounceIn" style="border:none">___</button>
+              </li>
+              
+            </div>
+            </ul>
+
+          </div>
+         <div class="col-sm-5 " >
         
              <h1 class="nombre">
                 LUIS SEBASTIAN MARTINEZ MORINIGO
              </h1>
-             <p id="sobremi"></p>
+             
 
-           <div id="font">
+           <div class="bor">
+             
              <ul>
               <li>
-                <p>SOFTWARE</p>
-               </li>
-               <li>Vs code</li>
-               <li>Apache NetBean</li>
-               <li>Paquete de Adobe Cloud</li>
-               <li>Cinema 4d</li>  
+                <p id="sobremi"></p>
+            
+            </li>
              </ul>
              <ul>        
-            
-               <a download href="./curr/CURRI LUIS.pdf"><button class="btn btn-success" >Descarga mi CV</button></a>
-          
-              </ul>
+              
            </div>
+          <a class="button" type="submit" id="boton1">SOBRE MI</a>
+            <a class="button" type="submit" id="boton2">SOFTWARE</a>
+          <a download href="./curr/CURRI LUIS.pdf">
+            <button class="button ">Descarga mi CV</button></a>
           
+          </ul>
           </div>
           
           <div class="col-sm-5 ">
         
-          <div>
-            <img src="imagenes/luis.jpg" class="img-thumbnail" class="class="img-fluid" alt="imagen de perfil"   />
+            <div>
+              <img src="imagenes/luis.jpg" class="img-thumbnail" 
+              class="class="img-fluid" alt="imagen de perfil" />
+            </div>
           </div>
-        
-          
-        
-        </div>
+
         <div class="col-sm-1">
              <ul>
               <li>
-                <a href="https://www.facebook.com/libertariasur" target="_blank" class="button">
+                <a href="https://www.facebook.com/libertariasur"
+                   target="_blank" class="button">
                   <i class="fa-brands fa-facebook"></i></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/luismseba/" target="_blank" class="button">
+                <a href="https://www.instagram.com/luismseba/" 
+                   target="_blank" class="button">
                   <i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/luis-sebastian-morinigo-61b12622a/" target="_blank" class="button">
+                <a href="https://www.linkedin.com/in/luis-sebastian-morinigo-61b12622a/" 
+                   target="_blank" class="button">
                 <i class="fa-brands fa-linkedin-in"></i></a>
               
               </li>
               
               <li>
-              <a href="https://api.whatsapp.com/send/?phone=541153224671" target="_blank" class="button">
-                <i class="fa-brands fa-whatsapp"></i></a>
-                </li>
-                <li>
-                  <a href="mailto:luis.escalada@hotmail.com" target="_blank" class="button" >
+                 <a href="https://api.whatsapp.com/send/?phone=541153224671"
+                       target="_blank" class="button">
+                   <i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                  <a href="mailto:luis.escalada@hotmail.com" 
+                     target="_blank" class="button" >
                     <i class="fa-sharp fa-solid fa-envelope"></i></a>
-                </li>
+               </li>
                 
-             </ul>
-        </div>
-        
-       
-        
+            </ul>
+        </div>  
     </div>
-    
   </section>   
         
 
 
 
- <section class="d-flex justify-content-center">
+  <section>
          
-      <div id="experiencia"></div>
-      <div class="row" id="dos" data-aos="fade-right"
-     data-aos-offset="500"
-     data-aos-easing="ease-in-sine">
-      <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
-        <source src="/video/humo.mp4">
+      <div id="experiencia">
+  <div class="row" id="dos" data-aos="fade-right"
+           data-aos-offset="500" data-aos-easing="ease-in-sine">
+
+         <video class="video-container" 
+             onloadedmetadata="this.muted=true" autoplay loop>
+       <source src="/video/humo.mp4">
       </video>
-         <div>
-             <h2 class="nombre">EXPERIENCIA</h2>
-          </div>
+     <ul>
+       <h2 class="nombre">EXPERIENCIA</h2>
+       <div class="exp">
+   
           <div>
-             <ul>
-              <li>
-               <h4>KOMO INDEC DIGITALIZACION - DATA ENTRY</h4>
+            
+              
+             <li>
+               <h4>KOMO INDEC DIGITALIZACION  DATA ENTRY</h4>
               </li>
               <li>
                 <p>Ingreso de datos</p>
@@ -142,64 +166,97 @@
               <li>
                <p>Seguimiento y solucion de problemas digitales</p>
             </li>
-            </ul>
+           
          
           </div>
-
-
+       </div>
+      
+        <div class="exp1">
         <div>
+          
              <h4>COMPANIA TEATRAL MI LUGAR EN EL MUNDO</h4>
         
           <li>
             <p>Fotografia - Filmacion - edicion</p>
           </li>
-          </ul>
+         
         </div>
-        
+      </div>
+      <div class="exp2">
         <div>
           
           <h4>DISEÑADOR MULTIMEDIA</h4>
         
-          <li>
-            <h5>Desarrollador de contendio Audioviusual</h5>
-          </li>
-          <li>
-            <h5>Diseñador Web</h5>
-          </li>
-          <li>
-            <h5>Editor de video</h5>
-          </li>
-          <li>
-            <h5>Fotografia</h5>
-          </li>
+            <li>
+               <h5>Desarrollador de contendio Audioviusual</h5>
+            </li>
+            <li>
+              <h5>Diseñador Web</h5>
+            </li>
+            <li>
+              <h5>Editor de video</h5>
+            </li>
+            <li>
+             <h5>Fotografia</h5>
+            </li>
         
-          
-          <div>
-            </div>
-            
-          </section>
+      
+      </div>
+      </div>
+      </ul>
+     </div>
+     
+</section>
 
 
 
  <section>
-  <div id="educación"></div>
+
+  <div id="educación">
   <div class="row" id="tres">
         <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
           <source src="/video/educacion.mp4">
         </video>
-<div>
-  <h2 class="color">EDUCACION</h2>
-</div>
-<h4>WEB FULL STACK JUNIOR ARGENTINA PROGRAMA</h4>
-<p>Frontend - Backend</p>
-<div class="limite"></div>
-<h4>Argentina Programa "Sé Programar"</h4>
-<div class="limite"></div>
-<h4>WEB FULL STACK JUNIOR ARGENTINA PROGRAMA</h4>
-<p>Frontend - Backend</p>
-<div class="limite"></div>
-<h4>Universidad de Buenos Aires</h4>
-<h5>Diseño Grafico</h5>
+<ul>
+     
+       <h2 class="nombre">EDUCACIÓN</h2>
+     
+    <div class="exp">
+  
+    <li> 
+     <h4>WEB FULL STACK JUNIOR ARGENTINA PROGRAMA</h4>
+
+       Frontend - Backend</li>
+  
+    </div>
+
+
+   <div class="exp1">
+    <ul>
+     <li>
+       <h3>Argentina Programa</h3>
+     </li>
+     <li> 
+      FRONTEND
+
+     </li>
+
+    </div>
+  <div class="exp2">
+  
+    <li>
+     <h4>Universidad de Buenos Aires</h4>
+    </li>
+
+ <div class="exp">
+    <li>
+     <h5>Diseño Grafico</h5>
+    </li>
+    </ul>
+   </div>
+
+   </ul>
+  
 </section>
 
 
@@ -211,7 +268,7 @@
     <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
       <source src="/video/habi.mp4">
     </video>
-    <h2 class="color">HABILIDADES</h2>
+    <h2 class="nombre">HABILIDADES</h2>
   
   <ul>
     <li>
@@ -247,7 +304,7 @@
       
   <script src="function.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="bower_components/aos/dist/aos.js"></script>
+  
   <script src="https://kit.fontawesome.com/e3ddec3070.js" crossorigin="anonymous"></script>
   <script src="./variable.js"></script>
   <script>
