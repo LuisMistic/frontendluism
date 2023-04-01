@@ -7,11 +7,19 @@
 * {
   outline: none !important;
 }
+
+html {
+        scroll-behavior: smooth 90%;
+       /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+       para probar la diferencia con y sin scroll suavizado*/
+  
+      }
 /*body*/
 .animation {
-  background-color: #998888;
-  width: 100v;
+  
+  width: 100vw;
   height: 90vh;
+  
   
 }
 
