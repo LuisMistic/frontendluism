@@ -40,7 +40,7 @@ ul.navegar li {
 
 img {
   justify-content: center;
-  width: 50%;
+  width: 40%;
   min-width: 8rem;
   max-width: 25rem;
 
@@ -71,7 +71,7 @@ img::after {
   box-shadow: 0 0 15px 3px hsl(185, 62%, 5%);
   border: 10px  hsl(0, 0%, 0%, 50%) ;
 
-  filter: opacity(90%);
+ 
 }
 
 #uno {
@@ -98,15 +98,20 @@ img::after {
   align-items: center;
   text-align: center;
   background-color: #9a5664;
- 
   width: 100vw;
   height: 100vh;
 }
 #cuatro {
   background-color: #cd9fa2;
-  
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; 
+  background: -webkit-linear-gradient(#9a5664,#1c1937);
+  background: -moz-linear-gradient(#9a5664, #1c1937);
+  background: -o-linear-gradient(#9a5664, #1c1937);
+  background: linear-gradient(#9a5664, #1c1937);
+  
 }
 #cinco {
   background-color: #1d1a37;
@@ -155,7 +160,7 @@ a {
 }
 
 .button:hover {
-  box-shadow: 0 0 40px 40px hsla(356, 14%, 78%, 10%) inset;
+ 
   color: hsl(348, 28%, 47%, 70%) !important ;
 }
 
@@ -214,10 +219,12 @@ a {
   font-size: 30px;
 }
 .nombre {
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   font-family: "Quicksand", sans-serif;
-  font-size: 50px;
+  font-size: 30px;
+ 
   text-align: center;
 }
 .luis {
@@ -225,7 +232,7 @@ a {
 }
 
 .h{
- color: black;
+ color: rgb(236, 236, 236);
 
 
 }
@@ -256,6 +263,7 @@ a {
 /*barra navegacion*/
 
 ul {
+ 
   list-style: none;
   font-size: 10px;
 }
@@ -263,6 +271,7 @@ ul {
 li {
   list-style: none;
   font-size: 20px;
+
 }
 
 @keyframes fade-inout {
