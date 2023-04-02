@@ -100,6 +100,7 @@ img::after {
   background-color: #9a5664;
   width: 100vw;
   height: 100vh;
+ 
 }
 #cuatro {
   background-color: #cd9fa2;
@@ -107,10 +108,10 @@ img::after {
   align-items: center;
   width: 100vw;
   height: 100vh; 
-  background: -webkit-linear-gradient(#9a5664,#1c1937);
-  background: -moz-linear-gradient(#9a5664, #1c1937);
-  background: -o-linear-gradient(#9a5664, #1c1937);
-  background: linear-gradient(#9a5664, #1c1937);
+  background:   hsl(348, 28%, 47%,80%) ;
+  border: 50px solid #1c1937;
+  
+  
   
 }
 #cinco {
@@ -267,6 +268,7 @@ ul {
   list-style: none;
   font-size: 10px;
 }
+
 
 li {
   list-style: none;
