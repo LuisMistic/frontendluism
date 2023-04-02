@@ -50,6 +50,10 @@ img {
     invert(0%) opacity(70%) saturate(120%) sepia(0%);
    box-shadow: 0 0 15px 3px #134d52;
 }
+body{
+  filter: opacity(90%) sepia(9%) saturate(98%);
+          
+}
 
 img::after {
   opacity: 1;
