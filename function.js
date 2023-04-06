@@ -1,5 +1,4 @@
 
-
 document.getElementById('boton1').onclick = function() {
 
     
@@ -50,4 +49,17 @@ document.getElementById('boton_color3').addEventListener('click', function () {
 });
 
 
+window.onload = function () {
+    // Wait for page to load before starting the animation
+    document.querySelector(".progress-bar::before").addEventListener("animationend", function () {
+        // Redirect to another page after the animation is complete
+       
+    });
+}
+
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById("boton").classList.remove("delayed-appear");
+    }, 3000);
+};
 
