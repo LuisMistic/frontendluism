@@ -6,3 +6,4 @@ function enviarWhatsApp() {
 function jugando (){
     alert("Alerta  ")
 }
+
