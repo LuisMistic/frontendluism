@@ -134,16 +134,30 @@ ul.navegar li {
 /* main*/
 
 img {
+  
+  margin-bottom: -70px;
+  display: flex;
+  align-items: center;
   justify-content: center;
   width: 40%;
   min-width: 8rem;
-  max-width: 25rem;
+  max-width: 40rem;
 
   border-radius: 50px 30px 70px;
   /* estos son filtros de brillo, contraste y escala de grises */
   filter: brightness(90%) contrast(170%) grayscale(80%) hue-rotate(0deg)
     invert(0%) opacity(70%) saturate(120%) sepia(0%);
    box-shadow: 0 0 15px 3px #134d52;
+}
+.imagen-contenedor {
+  position: relative;
+}
+
+.imagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body{
   filter: opacity(90%) sepia(9%) saturate(98%);
@@ -202,17 +216,20 @@ img::after {
  
 }
 #cuatro {
- 
+    height: 100vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh; 
-  background:  hsl(246, 38%, 16%,90%) ;
-  border:  50px solid #100f1a;
-  
-  
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+
   
 }
+  
+
 #cinco {
   background-color: #1d1a37;
   
@@ -656,3 +673,116 @@ body {
 .chatbot-wrapper:not(.chatbot-hidden) {
   display: block;
 }
+
+.imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(70%) saturate(120%);
+  box-shadow: inset 0 0 20px rgba(255,255,255,0.3);
+  border: 10px solid transparent;
+  transition: all 0.3s ease-in-out;
+  animation: recorrer-luz 5s infinite;
+}
+
+@keyframes recorrer-luz {
+  0% {
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.3);
+  }
+  50% {
+    box-shadow: inset 0 0 50px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.8);
+  }
+  100% {
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.3);
+  }
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background: linear-gradient(to bottom right, #fff, #f5f5f5);
+  border: 1px solid rgba(0, 0, 0, .125);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   width: 80%;
+  max-width: 600px;
+}
+
+.card-body {
+  padding: 30px 50px 40px;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.25);
+  filter: blur(10px);
+}
+.card {
+  opacity: 0.9;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.card-title {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 0;
+ 
+}
+
+.card-body {
+  padding: 30px 50px;
+   
+}
+
+.list-group {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.list-group-item i {
+  color: green;
+  margin-right: 10px;
+}
+
+/* Estilo para el texto apareciendo letra por letra */
+.texto-maquina {
+  overflow: hidden; /* Para que las letras no se muestren antes de tiempo */
+  white-space: nowrap; /* Para que el texto no se desborde */
+  animation: typing 2s steps(40) forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+}
+

@@ -1,132 +1,52 @@
-const services = {
-    '1': {
-        title: 'Desarrollo web',
-        description: 'El desarrollo web es la creación de sitios y aplicaciones web utilizando diferentes tecnologías como HTML, CSS, JavaScript, entre otras.',
-        submenu: {
-            'a': 'Diseño web',
-            'b': 'Desarrollo backend',
-            'c': 'Desarrollo frontend'
-        }
-    },
-    '2': {
-        title: 'Diseño gráfico',
-        description: 'El diseño gráfico es el arte y la práctica de planificar y proyectar ideas y experiencias visuales y textuales. Se utiliza en publicaciones impresas o digitales, como libros, revistas y periódicos.',
-        submenu: {
-            'a': 'Identidad corporativa',
-            'b': 'Diseño editorial',
-            'c': 'Diseño publicitario'
-        }
-    },
-    '3': {
-        title: 'Edición de video',
-        description: 'La edición de video es el proceso de manipular y reorganizar material de video para crear una historia o mensaje nuevo. Es utilizado en producciones de televisión, cine y video.',
-        submenu: {
-            'a': 'Edición de video corporativo',
-            'b': 'Edición de video de eventos',
-            'c': 'Edición de video creativo'
-        }
+const chatContainer = document.getElementById("chatbot-container");
+const chatLog = document.getElementById("chat-log");
+const userInput = document.getElementById("user-input");
+const sendBtn = document.getElementById("send-btn");
+let saludoHecho = false;
+
+function enviarMensaje(mensaje, clase) {
+    const li = document.createElement("li");
+    li.innerHTML = mensaje;
+    li.classList.add("chat-message", clase);
+    chatLog.appendChild(li);
+    chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+document.getElementById("chat-btn").addEventListener("click", function () {
+    if (!saludoHecho) {
+        enviarMensaje("¡Hola! Soy el Chatbot. ¿En qué puedo ayudarte?", "chat-bot");
+        saludoHecho = true;
+        chatContainer.classList.remove("closed");
+    } else {
+        chatContainer.classList.toggle("closed");
     }
-};
-
-let chatState = 'menu'; // Estado inicial
-let chatSubmenuSelection = '';
-
-const chatList = document.querySelector('.chat-messages');
-const chatInput = document.querySelector('.chat-input');
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.chatbot-send').addEventListener('click', () => {
-        const userMessage = chatInput.value.trim();
-        if (userMessage) {
-            handleMessage(userMessage);
-            chatInput.value = '';
-        }
-    });
-
-    document.querySelector('.chatbot-header').addEventListener('click', () => {
-        toggleChatbot();
-    });
 });
 
-function handleMessage(message) {
-    switch (chatState) {
-        case 'menu':
-            handleMenuSelection(message);
-            break;
-        case 'submenu':
-            handleSubmenuSelection(message);
-            break;
-        case 'submenu-option':
-            handleSubmenuOptionSelection(message);
-            break;
-    }
-}
+sendBtn.addEventListener("click", function () {
+    const userMsg = userInput.value;
+    enviarMensaje(userMsg, "chat-user");
 
-function handleMenuSelection(message) {
-    if (services[message]) {
-        const service = services[message];
-        addMessage(service.description, 'bot');
-        addMessage('¿Qué te gustaría saber sobre ' + service.title + '?', 'bot');
-        addSubmenu(service.submenu);
-        chatSubmenuSelection = message;
-        chatState = 'submenu';
+    // Lógica de respuestas del chatbot
+    let respuestaBot;
+
+    if (!saludoHecho) {
+        respuestaBot = "Lo siento, no te he entendido. ¿En qué puedo ayudarte?";
+        saludoHecho = true;
+    } else if (userMsg.toLowerCase() === "1") {
+        respuestaBot = "El desarrollo web implica crear sitios web y aplicaciones web dinámicas que brindan experiencias interactivas a los usuarios. ¿Te interesa algún lenguaje de programación en particular?";
+    } else if (userMsg.toLowerCase() === "2") {
+        respuestaBot = "El diseño gráfico se trata de la creación visual y estética de piezas publicitarias, folletos, logotipos, entre otros elementos. ¿Tienes algún proyecto en mente?";
+    } else if (userMsg.toLowerCase() === "3") {
+        respuestaBot = "La edición de video es el proceso técnico y artístico de manipulación y combinación de secuencias de video para producir una película o video completo. ¿Necesitas ayuda con alguna etapa en particular?";
     } else {
-        addMessage('Lo siento, no entiendo tu pregunta. Por favor, intenta con otra consulta.', 'bot');
+        respuestaBot = "Lo siento, no entiendo lo que quieres decir. Por favor ingresa una de las opciones del menú.";
     }
-}
 
-function handleSubmenuSelection(message) {
-    const service = services[chatSubmenuSelection];
-    const submenuOption = service.submenu[message];
-    if (submenuOption) {
-        addMessage(submenuOption, 'bot');
-        chatState = 'submenu-option';
-    } else if (message.toLowerCase() === 'volver') {
-        addMessage('Has vuelto al menú principal', 'bot');
-        clearSubmenu();
-        chatState = 'menu';
-    } else {
-        addMessage('Lo siento, no entiendo tu pregunta. Por favor, intenta con otra consulta.', 'bot');
-    }
-}
-function handleSubmenuOptionSelection(message) {
-    if (message.toLowerCase() === 'volver') {
-        const service = services[chatSubmenuSelection];
-        addMessage('Has vuelto al submenú de ' + service.title, 'bot');
-        addSubmenu(service.submenu);
-        chatState = 'submenu';
-    } else {
-        addMessage('Lo siento, no entiendo tu pregunta. Por favor, intenta con otra consulta.', 'bot');
-    }
-}
+    enviarMensaje(respuestaBot, "chat-bot");
 
-function addSubmenu(submenu) {
-    const submenuMessage = 'Por favor, elige una opción:';
-    for (const [key, value] of Object.entries(submenu)) {
-        submenuMessage += `\n${key}. ${value}`;
-    }
-    addMessage(submenuMessage, 'bot');
-}
+    // Limpiar el campo de entrada del usuario
+    userInput.value = "";
+});
 
-function clearSubmenu() {
-    chatSubmenuSelection = null;
-    const submenuItems = document.querySelectorAll('.chat-submenu-item');
-    for (const item of submenuItems) {
-        item.remove();
-    }
-}
-
-function handleSubmenuSelection(message) {
-    const service = services[chatSubmenuSelection];
-    const submenuOption = service.submenu[message];
-    if (submenuOption) {
-        addMessage(submenuOption, 'bot');
-        chatState = 'submenu-option';
-    } else if (message.toLowerCase() === 'volver') {
-        addMessage('Has vuelto al menú principal', 'bot');
-        clearSubmenu();
-        chatState = 'menu';
-    } else {
-        addMessage('Lo siento, no entiendo tu pregunta. Por favor, intenta con otra consulta.', 'bot');
-    }
-}
+// Ocultar el chatbot por defecto
+chatContainer.classList.add("closed");

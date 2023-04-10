@@ -18,9 +18,9 @@ document.getElementById("boton1").onclick = function () {
     setTimeout(function () {
         elemento.innerHTML = "";
         escribirMensaje(
-            "Me considero una persona flexible, con alta capacidad de adaptabilidad y aprendizaje. Actualmente me encuentro trabajando en KOMO en la digitalizacion y el ingreso de datos como tambien desarrllando contenido audiovisual en la compania de Teatro, MLM (Mi lugar en el Mundo)",
+            "Me considero una persona flexible, con alta capacidad de adaptabilidad y aprendizaje. Actualmente me encuentro trabajando en KOMO en la digitalizacion y desarrllando contenido audiovisual en la compania de Teatro, (Mi lugar en el Mundo)",
             elemento,
-            30
+            40
         );
         elemento.style.opacity = 1;
     }, 500);
@@ -35,7 +35,7 @@ document.getElementById("boton2").onclick = function () {
         escribirMensaje(
             "DISEÑO GRAFICO – EDICION DE VIDEO- EDICION DE SONIDO  (Paquete de  Adobe Cloud)  – ANIMACION 3D (Cinema 4d)  DESARROLLADOR WEB (Visual Studio Code – Apache NetBean)",
             elemento,
-            30
+            40
         );
         elemento.style.opacity = 1;
     }, 500);
