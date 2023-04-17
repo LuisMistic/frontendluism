@@ -33,7 +33,7 @@ document.getElementById("boton2").onclick = function () {
     setTimeout(function () {
         elemento.innerHTML = "";
         escribirMensaje(
-            "DISEÑO GRAFICO – EDICION DE VIDEO- EDICION DE SONIDO  (Paquete de  Adobe Cloud)  – ANIMACION 3D (Cinema 4d)  DESARROLLADOR WEB (Visual Studio Code – Apache NetBean)",
+            " DESARROLLADOR WEB - DISEÑO GRAFICO – EDICION DE VIDEO- EDICION DE SONIDO  (Paquete de  Adobe Cloud)  – ANIMACION 3D (Cinema 4d)",
             elemento,
             40
         );
