@@ -12,7 +12,7 @@
 
 html {
         scroll-behavior: smooth 90%;
-       /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+       /*Comenta la lÃ­nea (o dale el valor 'auto' a scroll behavior )
        para probar la diferencia con y sin scroll suavizado*/
   
       }
@@ -249,8 +249,8 @@ img::after {
   top: 0;
   left: 0;
   z-index: -3;
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 106.5%;
   object-fit: cover;
   filter: opacity(20%);
 }
@@ -261,7 +261,7 @@ img::after {
   left: 0;
   z-index: -3;
   width: 100%;
-  height: 100%;
+  height: 105%;
   object-fit: cover;
   filter: opacity(90%);
 }
@@ -378,7 +378,7 @@ a {
 }
 
 @media (max-width: 767px) {
-  /* Agregar margen con los bordes en dispositivos móviles */
+  /* Agregar margen con los bordes en dispositivos mÃ³viles */
   .exp, .exp1 {
     margin-right: 0;
     margin-left: 0;
@@ -902,7 +902,7 @@ button:hover {
   transform: translateY(-5px);
 }
 
-/* Estilos para la sección de descripción */
+/* Estilos para la secciÃ³n de descripciÃ³n */
 .descripcion {
   margin-top: 50px;
   text-align: center;
@@ -926,14 +926,14 @@ button:hover {
 
 
 .contenido-principal {
-  min-height: calc(100vh - 60px); /* Ajusta la altura de la barra de estado según sea necesario */
+  min-height: calc(100vh - 60px); /* Ajusta la altura de la barra de estado segÃºn sea necesario */
 }
 
 .barra-inferior {
   position: sticky;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Ajusta la altura de la barra de estado según sea necesario */
+  height: 60px; /* Ajusta la altura de la barra de estado segÃºn sea necesario */
   background-color: hsl(0, 0%, 0%,90%);
   color: #fff;
   text-align: center;
