@@ -40,3 +40,22 @@ btnDownload.onclick = function () {
         alert("Contraseña incorrecta, intenta de nuevo");
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    var modalTitle = document.querySelector("#modalPassword h2");
+    var textToWrite = "Introduce la contraseña para descargar el CV:";
+
+    function writeModalText() {
+        var index = 0;
+        var timer = setInterval(function () {
+            if (index < textToWrite.length) {
+                modalTitle.innerHTML += textToWrite.charAt(index);
+                index++;
+            } else {
+                clearInterval(timer);
+            }
+        }, 120);
+    }
+
+    writeModalText();
+});
+

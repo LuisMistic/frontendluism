@@ -23,6 +23,11 @@
   width: 80%; /* Could be more or less, depending on screen size */
   animation-name: modal-animation;
   animation-duration: 0.3s;
+  color: rgb(70, 28, 70);
+  
+}
+.modal-content h2 {
+  font-size: 23px;
 }
 
 @keyframes modal-animation {

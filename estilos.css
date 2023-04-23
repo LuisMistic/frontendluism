@@ -44,6 +44,11 @@ html {
   animation-fill-mode: forwards; /* Keeps the cursor at the last position */
 }  
 
+
+#sombra {
+    box-shadow: 0 0 15px 3px hsl(185, 62%, 5%);
+
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -109,7 +114,7 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, transparent, rgba(75, 12, 49, 0.8), rgba(75, 12, 49, 0.8), transparent);
+  background: linear-gradient(to right, transparent, rgba(75, 12, 49, 0.8), rgba(75, 12, 49, 0.8), transparent) !important;
   animation: progress 3s ease-in-out;
 }
 
@@ -176,47 +181,47 @@ img::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
-  background-color: #1d1a37 ;
-  color: rgb(255, 255, 255, 80%);
+  margin-left: 50%;
+  background-color: hsl(0, 0%, 0%, 70%) ;
+  color: rgba(41, 32, 32, 0.8);
   text-align: center;
   font-size: 20px;
-  box-shadow: 0 0 15px 3px hsl(185, 62%, 5%);
   border: 10px  hsl(0, 0%, 0%, 50%) ;
 
  
 }
 
 #uno {
-  background: #68264e ;
+  background: #ffffff ;
   width: 100vw;
   height: 100vh;
   
 }
 #dos {
   margin-top: 0px;
-  background-color: #566639;
+  background-color: hsl(81, 28%, 31%, 50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+ 
   height: 100vh;
   text-align: center;
 }
 
+
 #tres {
-  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  margin-top: 0px;
   background-color: #9a5664;
   width: 100vw;
   height: 100vh;
- 
 }
 #cuatro {
-    height: 100vh;
+
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +252,18 @@ img::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: opacity(35%);
+  filter: opacity(20%);
+}
+.video-container1{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(90%);
 }
 
 /* -- VIDEOS FONDO -- */
@@ -262,13 +278,23 @@ a {
   font-weight: lighter;
   font-size: 1.4rem;
   text-decoration: none !important;
-  color: white !important ;
+  color: rgb(56, 53, 53) !important ;
+}
+
+.button t{
+
+  color:#ffffff
+}
+.button t:hover {
+ 
+  color: hsla(0, 0%, 0%, 0.7) !important ;
 }
 
 
 /* -- PROPIEDADES BUTTON -- */
+
 .button {
-  border-color: hsl(90, 34%, 42%, 0%);
+  border-color: hsla(0, 0%, 26%, 0);
   transition: box-shadow 0.4s ease-in-out;
 }
 .btn {
@@ -276,44 +302,19 @@ a {
   border-radius: 50px solid;
 }
 
+
 .button:hover {
  
-  color: hsl(348, 28%, 47%, 70%) !important ;
+  color: hsla(0, 8%, 91%, 0.7) !important ;
 }
 
 #boton {
   font-size: 25px;
+  color: white !important; 
 }
 /* -- PROPIEDADES BUTTON -- */
 
-/* -- botones color fondo -- */
-#boton_color0 {
-  background-color: #ffffff;
-  font-size: 8px;
-  filter: opacity(60%);
-}
-#boton_color {
-  background-color: #719c46;
-  font-size: 8px;
-  filter: opacity(60%);
-}
 
-#boton_color1 {
-  background-color: #000000;
-  font-size: 8px;
-  filter: opacity(60%);
-}
-#boton_color2 {
-  background-color: #ff8c00;
-  font-size: 8px;
-  filter: opacity(60%);
-}
-#boton_color3 {
-  background-color: #2f4f4f;
-  font-size: 8px;
-  filter: opacity(60%);
-}
-/* -- botones color fondo -- */
 
 /*--font-- */
 
@@ -355,20 +356,91 @@ a {
 }
 /*--font-- */
 
-.exp {
+.exp, .exp1 {
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: hsl(246, 36%, 16%, 10%);
+  align-items: center;
+  padding: 80px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 3px hsl(185, 62%, 5%);
+  overflow: hidden;
+  background-color: hsla(0, 20%, 99%, 0.5);
 }
+
+@media (min-width: 768px) {
+  /* Agregar margen lateral en dispositivos de pantalla grande */
+  .exp, .exp1 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Agregar margen con los bordes en dispositivos móviles */
+  .exp, .exp1 {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.exp:before, .exp1:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
+  z-index: -1;
+  border-radius: 10px;
+  background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+  animation: light-effect 4s ease-in-out infinite alternate;
+}
+
+@keyframes light-effect {
+  from {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.exp:hover:before, .exp1:hover:before {
+  animation: none;
+}
+
+.exp, .exp1 {
+  perspective: 1000px;
+  backface-visibility: hidden;
+}
+
+.exp:hover, .exp1:hover {
+  transform: rotate(3deg);
+}
+
+.exp h4, .exp1 h4 {
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.exp p, .exp1 p, .exp1 h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(61, 61, 61)
+}
+
 .exp1 {
-  display: flex;
-  justify-content: center;
-  background-color: hsla(29, 96%, 55%, 0.1);
-}
-.exp2 {
-  display: flex;
-  justify-content: center;
-  background-color: hsla(342, 100%, 28%, 0.1);
+  background-color: rgb(255, 255, 255) ;
 }
 
 .bor {
@@ -490,9 +562,10 @@ button[type="submit"]:hover {
 * {
   box-sizing: border-box;
 }
-
+html,
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
 }
 
@@ -521,86 +594,6 @@ body {
   width: 100%;
 }
 
-.chatbot-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-}
-
-.chatbot-header {
-  background-color: #1e90ff;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.chatbot-notification {
-  position: absolute;
-  top: -5px;
-  right: 10px;
-  background-color: red;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 14px;
-}
-
-.chatbot-wrapper {
-  display: none;
-}
-
-.chatbot-hidden {
-  display: none;
-}
-
-.chatbot-body {
-  background-color: white;
-  border: 1px solid #1e90ff;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-}
-
-.chat-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow-y: scroll;
-  flex-grow: 1;
-}
-
-.chat-input-container {
-  display: flex;
-  border-top: 1px solid #1e90ff;
-}
-
-.chat-input {
-  flex-grow: 1;
-  border: none;
-  padding: 10px;
-}
-
-.chat-send-btn {
-  background-color: #1e90ff;
-  border: none;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.chatbot-hidden {
-  display: none;
-}
-#proyectos {
-  display: none;
-}
-.ocultar {
-  display: none;
-}
 
 
 
@@ -670,9 +663,7 @@ body {
   }
 }
 
-.chatbot-wrapper:not(.chatbot-hidden) {
-  display: block;
-}
+
 
 .imagen img {
   display: block;
@@ -695,14 +686,6 @@ body {
   100% {
     box-shadow: inset 0 0 20px rgba(255,255,255,0.3);
   }
-}
-.card {
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
@@ -732,16 +715,6 @@ body {
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.25);
   filter: blur(10px);
-}
-.card {
-  opacity: 0.9;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 .card-title {
@@ -786,3 +759,166 @@ body {
   from { width: 0 }
 }
 
+css
+#cuatro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  max-width: 600px;
+}
+
+.list-group-item {
+  text-align: left;
+}
+
+.texto-maquina {
+  display: inline-block;
+  text-align: center;
+
+}
+
+@media (max-width: 576px) {
+  .card-title,
+  .list-group-item {
+    font-size: 16px;
+  }
+}
+
+#btnPassword {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+#btnPassword:hover {
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.15), 0 1px 1px 0 rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+#btnPassword:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+/* Estilos para las secciones de experiencia */
+#experiencia {
+  margin-top: 50px;
+}
+
+.experience-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.exp,
+.exp1,
+.exp2 {
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.exp:hover,
+.exp1:hover,
+.exp2:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+.fontblack {
+  color: #1c1937;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.exp h4,
+.exp1 h4,
+.exp2 h4 {
+  margin-top: 0;
+}
+
+.experience-cards .exp p,
+.experience-cards .exp1 p,
+.experience-cards .exp2 p {
+  margin-bottom: 10px;
+}
+
+.hover-text {
+  display: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Mostrar texto de la tarjeta de experiencia en hover */
+.exp:hover .hover-text,
+.exp1:hover .hover-text,
+.exp2:hover .hover-text {
+  display: block;
+}
+
+/* Estilos para los nuevos botones */
+button {
+  background: #1c1937;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+button:hover {
+  background: #000;
+  transform: translateY(-5px);
+}
+
+/* Estilos para la sección de descripción */
+.descripcion {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.titulo-descripcion {
+  color: #1c1937;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.texto-descripcion {
+  color: #444444;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: justify;
+}

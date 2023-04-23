@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./estilos.css" />
-  <link rel="stylesheet" href="./contraseña.css" />
+  <link rel="stylesheet" href="./miArgchivo.css" />
   <title>Luis Martinez CV</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   
@@ -21,13 +23,12 @@
 <body>
   
 <div class="containerr">
-  <h1 class="typewriter typing-animation">Gracias por ingresar</h1>
+  <h1 id="typewriter-text">Gracias por ingresar</h1>
   <div class="progress-bar"></div>
   <a class="button1 delayed-appear blinking" type="submit" id="boton" href="#mi">ENTRAR</a>
 </div>
 
 
-<script src="function.js"></script>
 
 
 
@@ -46,15 +47,15 @@
     <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
       <source src="./video/bar.mp4">
     </video>
-    <div class="col-12">
+    <div class="col-12" id="sombra">
       <ul class="d-none d-lg-block">
       <li>
 
         <!-- -- LINKS -- -->
-        <a class="button" type="submit" id="boton" href="#mi">SOBRE MI</a>
-        <a class="button" type="submit" id="boton" href="#experiencia">EXPERIENCIA</a>
-        <a class="button" type="submit" id="boton" href="#educación">EDUCACION</a>
-        <a class="button" type="submit" id="boton" href="#habilidades">HABILIDADES</a>
+        <a class="button color"  type="submit" id="boton" href="#mi"><t>SOBRE MI</t></a>
+        <a class="button " type="submit" id="boton" href="#experiencia"><t>EXPERIENCIA</t></a>
+        <a class="button " type="submit" id="boton" href="#educación"><t>EDUCACION</t></a>
+        <a class="button " type="submit" id="boton" href="#habilidades"><t>HABILIDADES</t></a>
       </li>
       </ul>
       <ul class="row sticky-button  d-lg-none d-flex justify-content-center">
@@ -81,30 +82,7 @@
         <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
           <source src="./video/video.mp4">
         </video>
-        <div class="col-sm-1 ">
-          <div>
-            <ul class="d-none d-lg-block">
-              <li>
-                <button type="button" id="boton_color0" class="btn-outline-success animate__bounceIn"
-                  style="border:none">___</button>
-              </li>
-              <button type="button" id="boton_color" class="btn-outline-success animate__bounceIn"
-                style="border:none">___</button>
-              <li>
-                <button type="button" id="boton_color1" class="btn-outline-success animate__bounceIn"
-                  style="border:none">___</button>
-              </li>
-              <button type="button" id="boton_color2" class="btn-outline-success animate__bounceIn"
-                style="border:none">___</button>
-              <li>
-                <button type="button" id="boton_color3" class="btn-outline-success animate__bounceIn"
-                  style="border:none">___</button>
-              </li>
-
-          </div>
-          </ul>
-
-        </div>
+        
         <div class="col-sm-5 ">
           <h1 class="nombre luis">LUIS SEBASTIAN MARTINEZ MORINIGO</h1>
         
@@ -116,23 +94,26 @@
             </ul>
           </div>
         
-          <a class="button" href="#" id="boton1">SOBRE MI</a>
-          <a class="button" href="#" id="boton2">SOFTWARE</a>
+          <a class="button" style="font-size: 20px; font-family: Arial; font-weight: bold;" type="submit" id="boton1">SOBRE MI</a>
+
+          <a class="button" style="font-size: 20px; font-family: Arial; font-weight: bold;"type="submit" id="boton2">SOFTWARE</a>
         
           <button class="button" id="btnPassword">Descarga mi CV</button>
         </div>
         
         <!-- Modal -->
         <div id="modalPassword" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Introduce la contraseña para descargar el CV:</h2>
-            <form>
-              <input type="password" id="txtPassword" name="password">
-              <button type="button" class="download-button" id="btnDownload" onclick="descargarCV()">Descargar</button>
-            </form>
-          </div>
-        </div>
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <form>
+      <input type="password" id="txtPassword" name="password">
+      <button type="button" class="download-button" id="btnDownload" onclick="descargarCV()">Descargar</button>
+    </form>
+  </div>
+</div>
+
+
 
 
 <div class="col-sm-5 imagen-contenedor">
@@ -203,130 +184,112 @@
 
 
 
+ <div id="experiencia"></div>
+<div class="row justify-content-center text-center" id="dos" dat-aos="fade-right" data-aos-offset="500"
+  data-aos-easing="ease-in-sine" a>
+  <h2 class="d-none d-lg-block" style=" font-size: 80px; opacity: 0.5;">EXPERIENCIA</h2>
+  <i class="nombre d-lg-none fa-solid fa-person-digging"></i>
 
-    <section class="d-flex justify-content-center">
-
-      <div id="experiencia">
-        <!-- /* -- SECCIONES ROW css-- */ -->
-        <div class="row" id="dos" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
-
-          <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
-            <source src="./video/humos.mp4">
-          </video>
-          <ul>
-            <h2 class="nombre"><i class="fa-solid fa-person-digging" style="color: #1c1937;"></i></h2>
-            
-             <div class="exp"> <!-- /*--font-- css*/ -->
-
-              <div>
-
-
-                <li>
-                  <h4 class="fontblack">KOMO INDEC DIGITALIZACION DATA ENTRY</h4>
-                </li>
-                <li>
-                  <p>Ingreso de datos</p>
-                </li>
-                <li>
-                  <p>Digitalizacion</p>
-                </li>
-                <li>
-                  <p>Seguimiento y solucion de problemas digitales</p>
-                </li>
-
-
-              </div>
-            </div>
-
-            <div class="exp1"><!-- /*--font-- css*/ -->
-              <div>
-
-                <h4 class="fontblack">COMPANIA TEATRAL MI LUGAR EN EL MUNDO</h4>
-
-                <li>
-                  <p>Fotografia - Filmacion - edicion</p>
-                </li>
-
-              </div>
-            </div>
-            <div class="exp2"><!-- /*--font-- css*/ -->
-              <div>
-
-                <h4 class="fontblack">DISEÑADOR MULTIMEDIA</h4>
-
-                <li>
-                  <h5 class="fontMerri">Desarrollador de contendio Audioviusual</h5>
-                </li>
-                <li>
-                  <h5 class="fontMerri">Diseñador Web - Editor de video</h5>
-                </li>
-                <li>
-                  <h5 class="fontMerri">Filmación - Fotografia</h5>
-                </li>
-
-              </div>
-            </div>
-          </ul>
-        </div>
-
-    </section>
-
-
-
-    <section class="d-flex justify-content-center">
-      <div id="educación" style="max-width: 100%;">
-        <!-- /* -- SECCIONES ROW css-- */ -->
-        <div class="row" id="tres" data-aos="zoom-in">
-          <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
-            <source src="./video/educacion.mp4">
-          </video>
-          <ul>
-    
-            <h2 class="nombre"><i class="fa-sharp fa-solid fa-school" style="color: #1c1937;"></i></h2>
-    
-            <div class="exp"><!-- /*--font-- css*/ -->
-              <ul>
-                <li>
-                  <h4 class="fontblack">WEB FULL STACK JUNIOR ARGENTINA PROGRAMA</h4>
-    
-                  Frontend - Backend
-                </li>
-                >
-              </ul>
-            </div>
-    
-    
-            <div class="exp1"><!-- /*--font-- css*/ -->
-              <ul>
-                <li>
-                  <h4 class="fontblack">ARGENTINA PROGRAMA</h4>
-                </li>
-                <li>
-                  FRONTEND
-    
-                </li>
-              </ul>
-            </div>
-    
-            <div class="exp2"><!-- /*--font-- css*/ -->
-              <ul>
-                <li>
-                  <h4 class="fontblack">Universidad de Buenos Aires</h4>
-                </li>
-    
-    
-                <li>
-                  <h5 class="fontMerri">Diseño Grafico
-    
-                  </h5>
-                </li>
-    
-            </div>
-          </ul>
-    
-        </div>
+  <div class="col-md-3 mb-4  exp">
+    <!-- Agregar las clases col-12 y text-center -->
+    <div class="col-12 text-center">
+      <div>
+        <li>
+          <h4 class="fontblack">KOMO INDEC DIGITALIZACION DATA ENTRY</h4>
+        </li>
+        <li>
+          <p class="typing-text">Ingreso de datos</p>
+        </li>
+        <li>
+          <p class="typing-text">Digitalizacion</p>
+        </li>
+        <li>
+          <p class="typing-text">Seguimiento y solucion de problemas digitales</p>
+        </li>
+        <span class="hover-text">Mi experiencia en KOMO INDEC ha sido enriquecedora y exitosa gracias a la pasión por
+          la digitalización y el ingreso de datos.</span>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4 exp1 experiencia2">
+    <!-- Agregar las clases col-12 y text-center -->
+    <div class="col-12 text-center">
+      <div>
+        <h4 class="fontblack">COMPANIA TEATRAL MI LUGAR EN EL MUNDO</h4>
+        <ul> <!-- Envuelve el contenido en una lista no ordenada para la mejor semántica del HTML -->
+          <li>
+            <p>Fotografia - Filmacion - edicion</p>
+          </li>
+        </ul>
+        <span class="hover-text">Como director de arte en "Mi Lugar en el Mundo", he desarrollado habilidades en foto,
+          filmación y edición para contenidos audiovisuales en redes.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4 exp experiencia3">
+    <!-- Agregar las clases col-12 y text-center -->
+    <div class="col-12 text-center">
+      <div>
+        <li>
+          <h4 class="fontblack">DESARROLLADOR WEB</h4>
+        </li>
+        <li>
+          <p>FRONTEND</p>
+        </li>
+        <li>
+          <p>BACKEND</p>
+        </li>
+        <span class="hover-text">Como desarrollador web full-stack, he trabajado en proyectos desafiantes y
+          comprometidos con la calidad y creatividad.</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<section class="d-flex justify-content-center">
+  <div id="educación" style="max-width: 100%;">
+    <div class="row" id="tres" data-aos="zoom-in"><br><br>
+      <h2 class="d-none d-lg-block" style=" font-size: 80px; opacity: 0.5;">EDUCACION</h2>
+      <i class="nombre d-lg-none fa-sharp fa-solid fa-school" ></i>
+      <!-- <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+        <source src="./video/educacion.mp4">
+      </video> -->
+      <div class="col-md-3 mb-4 d-flex  ">
+        <ul class="exp1">
+          <li >
+            <h4 class="fontblack">WEB FULL STACK JUNIOR ARGENTINA PROGRAMA</h4>
+            Frontend - Backend
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-4 d-flex justify-content-center">
+        <ul class="exp1">
+          <li>
+            <h4 class="fontblack">ARGENTINA PROGRAMA</h4>
+            Frontend
+          </li>
+        </ul>
+        
+      </div>
+<div class="col-md-3 mb-4 d-flex justify-content-center">
+      <ul class="exp1">
+        <li>
+          <h4 class="fontblack">Universidad de Buenos Aires</h4>
+          <h5 class="fontMerri">Diseño Grafico</h5>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
 
 
 
@@ -339,22 +302,36 @@
       
       <div class="row" id="cuatro">
         
-        <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
+        <!-- <video class="video-container" onloadedmetadata="this.muted=true" autoplay loop>
           <source src="./video/habi.mp4">
-        </video>
+        </video> -->
 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"></h5><i class="fa-sharp fa-solid fa-scale-balanced" style="color: #000;"></i></a>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-1"></span></li>
-            <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-2"></span></li>
-            <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-3"></span></li>
-            <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-4"></span></li>
-            <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-5"></span></li>
-          </ul>
+    <div id="cuatro">
+      <div class="container-fluid">
+        <div class="row 8 justify-content-center align-items-center" style="background: transparent" style="box-shadow:hsl(246, 38%, 16%, 0%)">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"></h5><i class="fa-sharp fa-solid fa-scale-balanced" style="color: #000;"></i></a>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-1"
+                      class="texto-maquina"></span></li>
+                  <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-2"
+                      class="texto-maquina"></span></li>
+                  <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-3"
+                      class="texto-maquina"></span></li>
+                  <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-4"
+                      class="texto-maquina"></span></li>
+                  <li class="list-group-item"><i class="fa fa-check"></i> <span id="habilidad-5"
+                      class="texto-maquina"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+
       <script>
         window.addEventListener("DOMContentLoaded", function () {
           const habilidades = [
@@ -390,38 +367,13 @@
     </section>
 
 
-<!-- <section>
-<div class="chatbot-container">
-
-<button id="chat-btn">Abrir Chat</button>
-<div id="bot-container" >
-  <div class="chat-header">
-    <h3>Chatbot</h3>
-    <button id="close-btn">&times;</button>
-  </div>
-  <ul id="chat-log"></ul>
-  <div class="chat-input">
-    <input type="text" id="user-input" placeholder="Escribe aquí...">
-    <button id="send-btn">Enviar</button>
-  </div>
-  <div class="chat-actions">
-    <button id="back-btn">Atrás</button>
-    <button id="home-btn">Inicio</button>
-  </div>
-</div>
-
-</div>
-
-
-</div>
-
-</section> -->
-
   </main>
- 
-  <script src="./contraseña.js"></script>
+  <script src="experiencia.js"></script>
+  <script src="typewriter.js"></script>
+  <script src="function.js"></script>
+  <script src="./miArgchivo.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="function.js" defer></script>
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -436,22 +388,3 @@
 
 </html>
 
-<!-- Usuario: Hola, ¿qué servicios ofrecen?
-Chatbot: ¡Hola! Ofrecemos servicios de desarrollo web, diseño gráfico y edición de video. ¿Te interesa alguno en
-particular?
-Usuario: Sí, estoy interesado en el desarrollo web. ¿Qué lenguajes de programación utilizan para el frontend?
-Chatbot: Entre los lenguajes de programación que utilizamos para el frontend se destacan JavaScript, HTML y CSS. Además,
-utilizamos algunos frameworks o librerías para crear todo tipo de interfaces de usuario. Algunos de ellos son React,
-Redux, Angular y Bootstrap. ¿Te gustaría saber más sobre alguno de ellos?
-Usuario: Sí, cuéntame más sobre React.
-Chatbot: ¡Claro! React es una biblioteca de JavaScript para construir interfaces de usuario. Se utiliza para crear
-aplicaciones de una sola página, pero también se puede utilizar para construir componentes de interfaz de usuario más
-pequeños. ¿Te gustaría saber más sobre cómo utilizamos React en nuestros proyectos?
-Usuario: Sí, me gustaría saber más.
-Chatbot: Utilizamos React para crear interfaces de usuario rápidas y reactivas, que ofrecen una excelente experiencia al
-usuario. También lo utilizamos en conjunto con otras herramientas, como Redux, para manejar el estado de la aplicación.
-¿Te gustaría que te muestre algunos ejemplos de nuestros proyectos con React?
-Usuario: Sí, por favor.
-Chatbot: Perfecto, puedes revisar nuestra página web donde tenemos un portafolio con algunos de nuestros proyectos más
-recientes. También puedes contactarnos directamente si tienes alguna pregunta adicional. ¿Hay algo más en lo que pueda
-ayudarte? -->

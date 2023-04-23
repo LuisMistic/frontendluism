@@ -1,3 +1,5 @@
+
+
 var intervaloAnimacion;
 
 function escribirMensaje(mensaje, elemento, velocidad) {
@@ -41,42 +43,6 @@ document.getElementById("boton2").onclick = function () {
     }, 500);
 };
 
-
-document.getElementById('boton_color0').addEventListener('click', function () {
-
-    document.body.style.backgroundColor = '#ffffff';
-    console.log("aa")
-
-});
-
-document.getElementById('boton_color').addEventListener('click', function () {
-
-    document.body.style.backgroundColor = '#719C46';
-    console.log("aa")
-
-});
-
-
-document.getElementById('boton_color2').addEventListener('click', function () {
-
-    document.body.style.backgroundColor = '#FF8C00';
-    console.log("aa")
-
-});
-
-document.getElementById('boton_color1').addEventListener('click', function () {
-
-    document.body.style.backgroundColor = '#000000';
-    console.log("aa")
-
-});
-
-document.getElementById('boton_color3').addEventListener('click', function () {
-
-    document.body.style.backgroundColor = '#2F4F4F';
-    console.log("aa")
-
-});
 
 
 window.onload = function () {
